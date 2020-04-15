@@ -1,0 +1,128 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 30px;
+	font-weight: lighter;
+
+}
+header{
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/image_3.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+}
+.logo img{
+	height: 150px;
+	width: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	float:right;
+}
+.buttons{
+	margin-left: 3%;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.buttons li{
+	display: inline-block;
+	padding: 20px;
+}
+.buttons li a{
+	font-size: 100%;
+	color: white;
+	text-decoration: none;
+}
+.buttons li a:hover{
+	color: orange;
+	padding: 2px;
+	border: 1px solid yellow;
+	border-radius: 12px;
+	background-color: rgba( 169, 169, 169,0.4);
+}
+.gallery img{
+	width: 30%;
+	height: auto;
+	margin-left:20px;
+	padding: 0px;
+	border: 5px groove yellow;
+}
+.desc{
+	width: 90%;
+	font-weight: lighter;
+	font-size: 22px;
+	height: auto;
+	color: yellow;
+	margin: 10px;
+	font-family: 'Quicksand', sans-serif;
+}
+@media only screen and (max-device-width: 1024px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	.gallery img{
+		width: 50%;
+		margin-top: 130px;
+	}
+	.desc{
+		line-height: 70px;
+		font-weight: lighter;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	.gallery img{
+		width: 50%;
+		margin-top: 80px;
+	}
+	.desc{
+		line-height: 70px;
+		font-weight: lighter;
+	}
+}
+@media only screen and (max-device-width: 414px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+	.gallery img{
+		width: 50%;
+		margin-top: 40px;
+	}
+	.desc{
+		font-size: 45%;
+		line-height: 30px;
+		font-weight: lighter;
+	}
+}
+@media only screen and (max-device-width: 360px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+	.gallery img{
+		width: 50%;
+		margin-top: 40px;
+	}
+	.desc{
+		font-size: 30%;
+		line-height: 30px;
+		font-weight: lighter;
+	}
+}
+

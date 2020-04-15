@@ -1,0 +1,247 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 30px;
+	font-weight: lighter;
+
+}
+header{
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/image_3.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+	background-attachment: scroll;
+}
+.lunch {
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/lunch.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+	background-attachment: scroll;
+}
+.dinner {
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/dinner_2.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+	background-attachment: scroll;
+}
+.logo img{
+	height: 150px;
+	width: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	float:right;
+}
+.buttons{
+	margin-left: 3%;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.buttons li{
+	display: inline-block;
+	padding: 20px;
+}
+.buttons li a{
+	font-size: 100%;
+	color: white;
+	text-decoration: none;
+}
+.buttons li a:hover{
+	color: orange;
+	padding: 2px;
+	border: 1px solid yellow;
+	border-radius: 12px;
+	background-color: rgba( 169, 169, 169,0.4);
+}
+.one {
+	float:left;
+	color: yellow;
+	margin-left: 5%;
+	margin-top: 5%;
+	line-height: 50px;
+}
+.one h2{
+	color: orange;
+	font-family: 'Sacramento', cursive;
+}
+.two {
+	float:right;
+	color:yellow;
+	margin-right: 5%;
+	margin-top: 9%;
+	line-height: 50px;
+}
+
+.three {
+	float:left;
+	color: yellow;
+	margin-left: 5%;
+	margin-top: 5%;
+	line-height: 50px;
+}
+.three h2{
+	color: orange;
+	font-family: 'Sacramento', cursive;
+}
+.four {
+	float:right;
+	color:yellow;
+	margin-right: 10%;
+	margin-top: 9%;
+	line-height: 50px;
+}
+.five {
+	float:left;
+	color: yellow;
+	margin-left: 5%;
+	margin-top: 5%;
+	line-height: 50px;
+}
+.five h2{
+	color: orange;
+	font-family: 'Sacramento', cursive;
+}
+.six {
+	float:right;
+	color:yellow;
+	margin-right: 10%;
+	margin-top: 9%;
+	line-height: 50px;
+}
+.below-image img{
+
+	top-margin: 50%;
+}
+@media only screen and (max-device-width: 1024px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	header{
+		height: 80vh;
+	}
+	.lunch{
+		height:80vh;
+	}
+	.dinner{
+		height: 80vh;
+	}
+	.one{
+		line-height: 50px;
+	}
+	.two{
+		margin-top:11%;
+		line-height: 50px;
+	}
+	.three{
+		margin-top:12%;
+		line-height: 50px;
+	}
+	.four{
+		margin-top:18%;
+		line-height: 50px;
+	}
+	.five{
+		margin-top:12%;
+		line-height: 50px;
+	}
+	.six{
+		margin-top: 18%;
+		line-height: 50px;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	header{
+		height: 80vh;
+	}
+	.lunch{
+		height: 80vh;
+	}	
+	.dinner{
+		height: 80vh;
+	}
+	.one{
+		line-height: 40px;
+		font-size: 75%;
+	}
+	.two{
+		line-height: 40px;
+		font-size: 75%;
+		margin-right: 0px;
+	}
+	.three{
+		line-height: 40px;
+		font-size: 75%;
+	}
+	.four{
+		line-height: 40px;
+		font-size: 75%;
+	}
+	.five{
+		line-height: 40px;
+		font-size: 75%;
+	}
+	.six{
+		line-height: 40px;
+		font-size: 75%;
+	}
+	
+
+}
+@media only screen and (max-device-width: 414px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	header{
+		height: 75vh;
+	}
+	.lunch{
+		height: 75vh;
+	}	
+	.dinner{
+		height: 75vh;
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+	.one{
+		line-height: 25px;
+		font-size: 45%;
+	}
+	.two{
+		line-height: 25px;
+		font-size: 45%;
+	}
+	.three{
+		line-height: 25px;
+		font-size: 45%;
+	}
+	.four{
+		line-height: 25px;
+		font-size: 45%;
+	}
+	.five{
+		line-height: 25px;
+		font-size: 45%;
+	}
+	.six{
+		line-height: 25px;
+		font-size: 45%;
+	}
+}
+@media only screen and (max-device-width: 320px){
+	.one, .two, .three, .four, .five, .six{
+		font-size:30%;
+	}
+}

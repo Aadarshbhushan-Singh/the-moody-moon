@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 30px;
+	font-weight: lighter;
+
+}
+header{
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/image_3.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+}
+.logo img{
+	height: 150px;
+	width: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	float:right;
+}
+.buttons{
+	margin-left: 3%;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.buttons li{
+	display: inline-block;
+	padding: 20px;
+}
+.buttons li a{
+	font-size: 100%;
+	color: white;
+	text-decoration: none;
+}
+.buttons li a:hover{
+	color: orange;
+	padding: 2px;
+	border: 1px solid yellow;
+	border-radius: 12px;
+	background-color: rgba( 169, 169, 169,0.4);
+}
+.main-content{
+	font-size: 80%;
+	color: rgb(218, 224, 224);
+	margin-top: 12%;
+	margin-left: 5%;
+}
+span{
+	color: yellow;
+	font-family: 'Sacramento', cursive;
+}
+.button-below a{
+	font-size: 90%;
+	color: rgb(218, 224, 224);
+	margin-left: 5%;
+}
+.button-below{
+	margin-top: 2%;
+}
+.button-below a:hover{
+	color: yellow;
+	border: 1px solid yellow;
+	border-radius: 5px;
+	background-color: rgb(255,255,255,0.2)
+}
+@media only screen and (max-device-width: 1024px){
+	.main-content{
+		margin-top: 30%;
+		margin-right: 2%;
+		font-size: 110%;
+	}
+	.buttons li a{
+		font-size: 120%;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.main-content{
+		margin-top: 30%;
+		font-size: 90%;
+	}
+	.buttons li a{
+		font-size: 120%;
+	}
+}
+@media only screen and (max-device-width: 414px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	.main-content{
+		margin-top: 30%;
+		font-size: 60%;
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+}

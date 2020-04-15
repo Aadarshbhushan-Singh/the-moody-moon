@@ -1,0 +1,99 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 30px;
+	font-weight: lighter;
+
+}
+header{
+	background-image: linear-gradient(rgba( 0,0,0,0.3),rgba( 0,0,0,0.3)), url('images/image_3.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100%;
+}
+.logo img{
+	height: 150px;
+	width: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	float:right;
+}
+.buttons{
+	margin-left: 3%;
+	transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.buttons li{
+	display: inline-block;
+	padding: 20px;
+}
+.buttons li a{
+	font-size: 100%;
+	color: white;
+	text-decoration: none;
+}
+.buttons li a:hover{
+	color: orange;
+	padding: 2px;
+	border: 1px solid yellow;
+	border-radius: 12px;
+	background-color: rgba( 169, 169, 169,0.4);
+}
+.desc{
+	border: 2px solid red;
+	border-radius: 10px;
+	color: yellow;
+	margin: 10%;
+	padding: 20px;
+}
+@media only screen and (max-device-width: 1024px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	.desc{
+		line-height: 80px;
+	}
+}
+@media only screen and (max-device-width: 768px){
+	.buttons li a{
+		font-size: 120%;
+	}
+	.desc{
+		line-height: 50px;
+		font-size: 20px;
+	}
+}
+@media only screen and (max-device-width: 414px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+	.desc{
+		line-height: 40px;
+		font-size: 15px;
+	}
+}
+@media only screen and (max-device-width: 360px){
+	header{
+		background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)), url('images/image_2.jpeg');
+	}
+	.buttons li{
+		display: block;
+		padding: 1px;
+	}
+	.buttons li a{
+		font-size: 70%;
+	}
+	.desc{
+		line-height: 30px;
+		font-size: 12px;
+	}
+}
